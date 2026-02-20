@@ -5,13 +5,13 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import HomeGTA from "./pages/HomeGTA";
+import HomeDashboard from "./pages/HomeDashboard";
 import Lenis from 'lenis';
 
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={HomeGTA} />
+      <Route path={"/"} component={HomeDashboard} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
